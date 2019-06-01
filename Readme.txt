@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Angular 8
 
 Some important points:
@@ -17,3 +18,12 @@ ts file => you can define text ='false'
 and for altering thwe result we can use setTimeout method in constructor.
 
 3. event binding
+We can use event binding for the options like click basically option that user need
+It is written in paranthesis
+
+Html file= (click)="getStatus()"
+TS file =
+something=false;
+getStatus(){
+    this.something=true;
+}

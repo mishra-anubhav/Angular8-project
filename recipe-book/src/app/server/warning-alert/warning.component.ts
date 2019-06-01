@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WarningComponent implements OnInit{
 allowNewServer=false;
+serverCreationStatus= 'no server was created!';
 constructor(){
     setTimeout(() =>{
         this.allowNewServer =true;
@@ -14,5 +15,8 @@ constructor(){
     }
     ngOnInit(){
 
+    }
+    onCreateServer(){
+        this.serverCreationStatus="Server was created!";
     }
 }
