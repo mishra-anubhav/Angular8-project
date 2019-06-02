@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-Angular 8
+#Angular 8
 
 Some important points:
 
@@ -27,3 +26,6 @@ something=false;
 getStatus(){
     this.something=true;
 }
+
+TWO WAY DATA BINDING:
+In this we can use both event binding and String interpolation. 
