@@ -3,25 +3,21 @@ import { Component, OnInit } from '@angular/core';
 @Component(
 {
     selector:'app-warning',
-    templateUrl:'warning.component.html'
+    templateUrl:'warning.component.html',
+    styleUrls:['warning.component.css'],
 })
 export class WarningComponent implements OnInit{
-allowNewServer=false;
-serverCreationStatus= 'no server was created!';
-serverName="TestServer";
+showpara=false;
+logs=[];
+showpass(){
+    this.showpara=!this.showpara;
+    //this.logs.push(this.logs.length +1);
+    this.logs.push(new Date());
+}
 constructor(){
-    setTimeout(() =>{
-        this.allowNewServer =true;
-    },2000);
-    }
+   }
     ngOnInit(){
 
     }
-    onCreateServer(){
-        this.serverCreationStatus="Server was created!";
-    }
-    on(){
-        this.serverName = (<HTMLInputElement>event.target).value;
 
-    }
 }

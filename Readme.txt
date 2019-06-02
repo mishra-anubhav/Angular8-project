@@ -1,31 +1,60 @@
 #Angular 8
 
-Some important points:
+##For installing Angular:
+    ng install -g @angular/cli@latest
 
-for updating Angular:
-ng uninstall -g @angular/cli
-npm cache clean 
-ng install -g @angular/cli@latest
+## For updating Angular:
+    ng uninstall -g @angular/cli    
+    npm cache clean 
+    ng install -g @angular/cli@latest
+
+Data Binding Techniques =>
 
 1. String interpolation:
-Html file =>you can use by {{ text }}  
-ts file => youc an define text ='Anything'
+String interpolation can be used for the dynamic presentation of one variable in many places.
+Example:
+HTML file:
+    {{ text }}  
+TS file:
+    text = 'Anything'
 
 2. Property binding:
-Html file =>[diasbled] = "text"
-ts file => you can define text ='false'
-and for altering thwe result we can use setTimeout method in constructor.
+As the name suggest its related to properties of the html file.
+Example:
+HTML file:
+    [diasbled] = "text"
+TS file: 
+    text ='false'
+(and for altering the result we can use setTimeout method in constructor )
 
 3. event binding
-We can use event binding for the options like click basically option that user need
-It is written in paranthesis
-
-Html file= (click)="getStatus()"
-TS file =
-something=false;
-getStatus(){
+We  use event binding for the options that users need like click, input etc.
+Example:
+HTML file:
+    (click)="getStatus()"
+TS file: 
+    something=false;
+    getStatus(){
     this.something=true;
-}
+    }
 
 TWO WAY DATA BINDING:
-In this we can use both event binding and String interpolation. 
+
+In this we use [(ngModel)] and String interpolation for dynamic change. 
+
+Example:
+HTML file:
+
+<input type ="text" [(ngModel)]="serverName"><p>{{serverName}}</p>
+
+TS FILE:
+serverName="AWS"
+
+
+Now, its time for undersanding directive:
+1. *ngIf
+2. *ngIf with <ng-tempelate>
+3. [ngStyle] (DIrective is used as a property)
+4. [ngClass]="{online:serverStatus ==="online"}"
+5. *ngFor 
+
