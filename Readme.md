@@ -1,6 +1,6 @@
-#Angular 8
+# Angular 8
 
-##For installing Angular:
+## For installing Angular:
     ng install -g @angular/cli@latest
 
 ## For updating Angular:
