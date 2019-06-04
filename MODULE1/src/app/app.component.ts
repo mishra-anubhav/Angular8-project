@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'MODULE1';
+odd:number[]=[]
+even:number[]=[]
+ 
+onIntervalFired(fired:number){
+  if (fired % 2 === 0){
+    this.even.push(fired);
+    }
+    else{
+      this.odd.push(fired);
+    }
+
+}
 }

@@ -75,6 +75,8 @@ If you DON'T access the selected element in ngOnInit (but anywhere else in your 
 
 This is a temporary adjustment which will NOT be required anymore once Angular 9 is released!
 
+It's same with @ContentChild                              
+
 #### Lifecycle :
 
     ngOnChanges
