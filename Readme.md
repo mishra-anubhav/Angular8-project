@@ -75,12 +75,15 @@ If you DON'T access the selected element in ngOnInit (but anywhere else in your 
 
 This is a temporary adjustment which will NOT be required anymore once Angular 9 is released!
 
-## Lifecycle
-### ngOnChanges
-### ngOnInii
-### ngDoCheck
-### ngAfterContentInit
-### ngAfterContentChecked
-### ngAfterViewInit
-### ngAfterViewChecked
-### ngOnDestroy
+## Lifecycle :
+
+    ngOnChanges
+    ngOnInii
+    ngDoCheck
+    ngAfterContentInit
+    ngAfterContentChecked
+    ngAfterViewInit
+    ngAfterViewChecked
+    ngOnDestroy
+
+    
